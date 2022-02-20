@@ -1,0 +1,43 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: [c0] 25% [column1] 50% [column2] 25% [columnend];
+    grid-template-rows: [r0] 20% [start-button-start] 10% [start-button-end notes-container-start] 40% [notes-container-end end-button-start] 10% [end-button-end] 20% [rowend];
+}
+
+
+.start-end {
+    background-color: grey;
+}
+
+#start-button {
+    grid-column-start: column1;
+    grid-column-end: column2;
+    grid-row-start: start-button-start;
+    grid-row-end: start-button-end;
+}
+
+#notesContainer{
+    grid-column-start: column1;
+    grid-column-end: column2;
+    grid-row-start: notes-container-start;
+    grid-row-end: notes-container-end;
+
+    text-align: center;
+    font-size:1600%; 
+}
+
+#end-button{
+    grid-column-start: column1;
+    grid-column-end: column2;
+    grid-row-start: end-button-start;
+    grid-row-end: end-button-end;
+}
